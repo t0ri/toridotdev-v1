@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto|Roboto+Mono');
+* {
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+}
+
+:root {
+  --serif-font: 'Playfair Display';
+  --sans-font: 'Roboto';
+  --mono-font: 'Roboto Mono';
+
+  --not-pink-color: lavenderblush;
+  --purple-color: #805261;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  
+  font-size: 16px;
+
+  background-color: var(--not-pink-color);
+}
+
+
+#window-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+#introduction-container {
+  margin-top: 20vh;
+}
+
+#introduction-heading-text {
+  text-align: center;
+  font-family: var(--serif-font);
+  font-size: 15em;
+  color: white;
+  text-shadow: 1px 1px var(--purple-color);
+}
+
+
+#introduction-text {
+  text-align: center;
+  font-family: var(--serif-font);
+  font-size: 3em;
+  font-weight: 200;
+  color: var(--purple-color);
+}
+
+#link-container {
+  width: 25vw;
+  height: 5vh;
+
+  margin: 2vh 0 0 calc(100vw - 62.5%);
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-img {
+  background-repeat: no-repeat;
+
+  min-height: 20px;
+  min-width: 20px;
+}
+
+#link-linkedin {
+  background-image: url('./img/linkedin.png');
+}
+
+#link-github {
+  background-image: url('./img/github.png');
+}
+
+#link-medium {
+  background-image: url('./img/medium.png');
+}
+
+#link-dribbble {
+  background-image: url('./img/dribbble.png');
+}
+
+#link-twitter {
+  background-image: url('./img/twitter.png');
+}
+
+@media (max-width: 1200px) {
+  #introduction-heading-text { font-size: 10em; }
+  #introduction-text { font-size: 2em; }
+  #link-container { margin-top: -.5vh; }
+}
